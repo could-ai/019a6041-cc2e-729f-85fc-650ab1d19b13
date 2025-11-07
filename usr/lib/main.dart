@@ -1,1 +1,27 @@
-import 'package:flutter/material.dart';\nimport 'screens/home_screen.dart';\n\nvoid main() {\n  runApp(const PhoneSalesApp());\n}\n\nclass PhoneSalesApp extends StatelessWidget {\n  const PhoneSalesApp({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Phone Sales',\n      debugShowCheckedModeBanner: false,\n      theme: ThemeData(\n        primarySwatch: Colors.blue,\n        colorScheme: ColorScheme.fromSeed(\n          seedColor: Colors.blue,\n          brightness: Brightness.light,\n        ),\n        useMaterial3: true,\n      ),\n      home: const HomeScreen(),\n    );\n  }\n}
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+
+void main() {
+  runApp(const PhoneSalesApp());
+}
+
+class PhoneSalesApp extends StatelessWidget {
+  const PhoneSalesApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Phone Sales',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+          brightness: Brightness.light,
+        ),
+        useMaterial3: true,
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
